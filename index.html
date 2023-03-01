@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contract</title>
+	<!-- Mobile Specific Metas -->
+	<meta content="Australia’s first and most trusted car buying service. Since 2009, we have ensured almost a decade of outstanding service and top prices to our customers. Our group purchased its first vehicle direct to the public 10 years ago and have since grown to become the most trusted and reliable car buying service in the country." name="description">
+	<meta content="CarBuyers — Sell My Car" property="og:title">
+	<meta content="summary" name="twitter:card">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+<!--  for file uploader  -->
+
+    <link href="http://hayageek.github.io/jQuery-Upload-File/4.0.11/uploadfile.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://hayageek.github.io/jQuery-Upload-File/4.0.11/jquery.uploadfile.min.js"></script>
+
+<!--    -->
+</head>
+<body>
+	<div class="page-content">
+		<div class="form-v10-content">
+            <div class="formLogo">
+                <img src="images/cb-blue-blue-com-au-w-icon.svg" alt="Form Logo" >
+            </div>
+
+			<form class="form-detail" onsubmit="return false;" enctype="multipart/form-data" id="myForm">
+
+				<div class="form-left">
+                    <h2>SELLER DETAILS</h2>
+                    <div class="myformGroup">
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="first_name" id="first_name" class="input-text" placeholder="First Name" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="last_name" id="last_name" class="input-text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="address" id="address" class="input-text" placeholder="Address" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="state" id="state" class="input-text" placeholder="State" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="suburb" id="suburb" class="input-text" placeholder="Suburb" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="postcode" id="postcode" class="input-text" placeholder="Postcode" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="number" id="number" class="input-text" placeholder="Mobile / Contact Number" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="email" name="email" id="email" class="input-text" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1 lableBox">
+                                <label>D.O.B</label>
+                                <input type="date" name="date" id="date" class="input-text" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="licence" id="licence" class="input-text" placeholder="Drivers Licence No" required>
+                            </div>
+                            <div class="form-row form-row-3">
+                                <input type="text" name="expiry" id="expiry" class="input-text" placeholder="Expiry" required>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>VEHICLE DETAILS</h2>
+                    <div class="myformGroup">
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="year" id="year" class="input-text" placeholder="Year" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="make" id="make" class="input-text" placeholder="Make" required>
+                            </div>
+                            <div class="form-row form-row-3">
+                                <input type="text" name="model" id="model" class="input-text" placeholder="Model" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="badge" id="badge" class="input-text" placeholder="Badge" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="series" id="series" class="input-text" placeholder="Series" required>
+                            </div>
+                            <div class="form-row form-row-3">
+                                <input type="text" name="body" id="body" class="input-text" placeholder="Body" required>
+                            </div>
+                            <div class="form-row form-row-4">
+                                <input type="text" name="colour" id="colour" class="input-text" placeholder="Colour" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="odometer" id="odometer" class="input-text" placeholder="Odometer" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="transmission" id="transmission" class="input-text" placeholder="Transmission" required>
+                            </div>
+                            <div class="form-row form-row-3">
+                                <input type="text" name="cylinders" id="cylinders" class="input-text" placeholder="Cylinders" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="fuel" id="fuel" class="input-text" placeholder="Fuel" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="vin" id="vin" class="input-text" placeholder="Chassis / Vin No" required>
+                            </div>
+                            <div class="form-row form-row-3">
+                                <input type="text" name="engine" id="engine" class="input-text" placeholder=" Engine No" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="reg" id="reg" class="input-text" placeholder="Reg No" required>
+                            </div>
+                            <div class="form-row form-row-2 lableBox">
+                                <label>Reg Expiry</label>
+                                <input type="date" name="reg_expiry" id="reg_expiry" class="input-text" required>
+                            </div>
+                            <div class="form-row form-row-3 lableBox">
+                                <label>First Year Registered</label>
+                                <input type="date" name="registered" id="registered" class="input-text" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1 lableBox">
+                                <label>Build Date</label>
+                                <input type="date" name="build_date" id="build_d" class="input-text"   required>
+                            </div>
+                            <div class="form-row form-row-2 lableBox">
+                                <label>Compliance Date</label>
+                                <input type="date" name="compliance_d" id="compliance_d" class="input-text"   required>
+                            </div>
+                            <div class="form-row form-row-3">
+                                <input type="text" name="doors" id="doors" class="input-text" placeholder="Doors" required>
+                            </div>
+                            <div class="form-row form-row-4">
+                                <input type="text" name="seats" id="seats" class="input-text" placeholder="Seats" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-5 lableBox">
+                                <label>Written Off: </label>
+                                <input type="button" name="yesBtn" id="yesBtn" class="input-text" value="Yes">
+                                <input type="button" name="noBtn" id="noBtn" class="input-text" value="/  No">
+                                <span> (If Yes, contract is void and charges will be incurred by the seller)</span>
+                            </div>
+                            <div class="form-row form-row-2 lableBox">
+                                <label>Service Books: </label>
+                                <input type="button" name="yesBtn1" id="yesBtn1" class="input-text" value="Yes">
+                                <input type="button" name="noBtn1" id="noBtn1" class="input-text" value="/  No">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1 lableBox">
+                                <label>Registration Papers Supplied:</label>
+                                <input type="button" name="yesBtnP" id="yesBtnP" class="input-text" value="Yes">
+                                <input type="button" name="noBtnP" id="noBtnP" class="input-text" value="/  No">
+                            </div>
+                            <div class="form-row form-row-2 lableBox">
+                                <label>Finance:</label>
+                                <input type="button" name="yesBtnF" id="yesBtnF" class="input-text" value="Yes">
+                                <input type="button" name="noBtnF" id="noBtnF" class="input-text" value="/  No">
+                            </div>
+                            <div class="form-row form-row-3">
+                                <input type="text" name="which_company" id="which_company" class="input-text" placeholder="If yes, which company" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="insurance"  id="insurance" placeholder="Insurance (details)" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-5">
+                                <input type="text" name="signature" id="signature" class="input-text" placeholder="Seller's Signature" required>
+                            </div>
+                            <div class="form-row form-row-2 lableBox">
+                                <label>Date</label>
+                                <input type="date" name="date1" id="date1" class="input-text"  required>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>VBANK DETAILS - <span>Must be the registered owner of the vehicle unless a ‘Letter of Authority’ is signed with additional information supplied</span></h2>
+                    <div class="myformGroup">
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="BSB" id="BSB" class="input-text" placeholder="BSB" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="account" id="account" class="input-text" placeholder="Account No" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row form-row-1">
+                                <input type="text" name="Name" id="Name" class="input-text" placeholder="Name" required>
+                            </div>
+                            <div class="form-row form-row-2">
+                                <input type="text" name="bank" id="bank" class="input-text" placeholder="Bank" required>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+                <div class="form-left">
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <input type="text" name="make1" id="make1" class="input-text" placeholder="MAKE"  >
+                            <input type="text" name="year1" id="year1" class="input-text" placeholder="YEAR"  >
+                        </div>
+                        <div class="form-row form-row-1-sm lableBox">
+                            <label>Date:</label>
+                            <input type="date" name="date2" id="date2" class="input-text"   >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <input type="text" name="MODEL1" id="MODEL1" class="input-text" placeholder="MODEL"  >
+                            <input type="text" name="KILOMETRES" id="KILOMETRES" class="input-text" placeholder="KILOMETRES">
+                        </div>
+                    </div>
+                    <div class="form-row bottomPart">
+                        <input type="text" name="#" class="additional"   placeholder="I">
+                        <input type="text" name="#" class="additional"   placeholder="of">
+                        <span> hereby agree to sell my car to Australian Automotive Sales Pty Ltd (AAS), LMCT 11022 for the amount of : </span>
+                        <label>$</label>
+                        <input type="text" name="price" class="price" id="price"  >
+                        <span>(Purchase Price, Inc GST), and agree to the terms and conditions set out below</span>
+                    </div>
+                </div>
+                <div class="rulesBox">
+                    <p>I agree to the following terms:</p>
+                    <ol class="num">
+                        <div class="left-side">
+                            <div class="li-group">
+                                <li> PROVISION OF SERVICES AND SERVICE FEE
+                                    <ol class="alpha">
+                                        <li>In consideration for AAS providing the Services, AAS will
+                                            charge the Seller a Service Fee of $118. </li>
+                                        <li>The Service Fee will be deduced from the Purchase Price
+                                            or otherwise charged to the Seller in accordance with this
+                                            agreement.</li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> PAYMENT
+                                    <ol class="alpha">
+                                        <li>Subject to the terms of this agreement, AAS will pay the
+                                            Payment Amount to the account nominated by the Seller
+                                            within 7 days of the date of this agreement, provided the
+                                            Seller has provided AAS with all necessary information
+                                            and material and is otherwise in compliance with the
+                                            terms of this agreement.</li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> VEHICLES SUBJECT TO FINANCE
+                                    <ol class="alpha">
+                                        <li>If the Vehicle is subject to finance, the Seller must do all
+                                            things that AAS reasonably requires to obtain the Payout
+                                            Figure from the financier</li>
+                                        <li>If the Purchase Price is less than the Payout Figure, AAS
+                                            may, at its sole discretion:
+                                            <ol class="roman">
+                                                <li>terminate this agreement by notice to the Seller
+                                                    and invoice the Seller for the Service Fee; or
+                                                </li>
+                                                <li>agree to receive payment of the difference from
+                                                    the Seller (plus any Service Fee) so that AAS
+                                                    can pay the Payout Figure to the financier to
+                                                    discharge any loan against the Vehicle, with
+                                                    such payment to be deemed payment by AAS
+                                                    of the Purchase Price under this agreement.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> WARRANTIES
+                                    <ol class="alpha">
+                                        <li>If the Vehicle is subject to finance, the Seller must do all
+                                            things that AAS reasonably requires to obtain the Payout
+                                            Figure from the financier
+                                            <ol class="roman">
+                                                <li>it is the legal and beneficial owner of the
+                                                    Vehicle;
+                                                </li>
+                                                <li>it has the sole right, power and authority to
+                                                    enter into this agreement and fulfil its
+                                                    obligations under this agreement;
+                                                </li>
+                                                <li>in selling the Vehicle, it will not be in breach of
+                                                    any obligation owed to any person;
+                                                </li>
+                                                <li>all information provided by the Seller in this
+                                                    agreement is true, complete and not
+                                                    misleading;
+                                                </li>
+                                                <li>it will not permit the Vehicle to be driven without
+                                                    the written consent of AAS from the date of this
+                                                    agreement;
+                                                </li>
+                                                <li>on collection of the Vehicle by AAS, the Vehicle
+                                                    will be in the same condition as when the
+                                                    Vehicle was inspected by AAS, prior to
+                                                    entering into this agreement; </li>
+                                                <li>at the time of payment of the Payment Amount,
+                                                    title to the Vehicle will pass to AAS free of any
+                                                    encumbrance and third party interests; and </li>
+                                                <li>it will remove any advertisements for the sale
+                                                    of the Vehicle immediately upon notification of
+                                                    payment by AAS. </li>
+                                            </ol>
+                                        </li>
+                                        <li>These warranties apply as at the date of this agreement
+                                            and at the date of collection of the Vehicle by AAS.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> COLLECTION
+                                    <ol class="alpha">
+                                        <li>The Seller must take all reasonable steps to make the
+                                            Vehicle, together with all manuals, keys, service history
+                                            and registration details (if applicable), available for
+                                            immediate collection once AAS has provided proof of
+                                            payment of the Payment Amount, or at any other time
+                                            mutually agreed between the parties. </li>
+                                        <li>AAS will use reasonable endeavours to arrange
+                                            collection of the Vehicle at the time agreed between the
+                                            parties, or otherwise as soon as reasonably practicable. </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> INSURANCE
+                                    <ol class="alpha">
+                                        <li>The Seller must maintain any insurance policies in place
+                                            with respect to the Vehicle as at the date of this
+                                            agreement until collection of the Vehicle by AAS.</li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> RISK AND TITLE
+                                    <ol class="alpha">
+                                        <li>All risk in and to the Vehicle will pass to AAS upon
+                                            collection of the Vehicle by AAS. </li>
+                                        <li>Legal and equitable title in and to the Vehicle will pass to
+                                            AAS upon payment of the Payment Amount. </li>
+                                        <li>The Seller acknowledges that until title in and to the
+                                            Vehicle passes to AAS in accordance with this
+                                            agreement, the Seller holds the Vehicle as bailee of AAS
+                                            and that a fiduciary relationship exists between the Seller
+                                            and AAS. </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> CANCELLATION BY THE SELLER
+                                    <ol class="alpha">
+                                        <li>The Seller may terminate this agreement at any time
+                                            before AAS has made payment of the Payment Amount
+                                            by providing at least 24 business hours written notice to
+                                            AAS.  </li>
+                                        <li>Notice of cancellation must be sent to
+                                            sales@carbuyers.com.au or such other address
+                                            nominated by AAS in writing from time to time. </li>
+                                        <li>In the event of cancellation by the Seller, a cancellation
+                                            fee of $600 (plus GST) will be payable immediately by the
+                                            Seller to AAS in addition to payment of the Service Fee. </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> CANCELLATION BY AAS
+                                    <p>AAS may terminate this agreement by providing written
+                                        notice to the Seller at any time before making payment of
+                                        the Payment Amount at its sole and absolute discretion.</p>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> LIMITATION OF LIABILITY
+                                    <ol class="alpha">
+                                        <li>To the full extent permitted by law, AAS' liability under this
+                                            agreement is limited to payment of the Purchase Price.</li>
+                                        <li>Under no circumstances will AAS be liable for any
+                                            Consequential Loss and any such Consequential Loss is
+                                            expressly excluded.</li>
+                                    </ol>
+                                </li>
+                            </div>
+                        </div>
+
+                        <div class="right-side">
+                            <div class="li-group">
+                                <li> INDEMNITY AND RELEASE
+                                    <ol class="alpha">
+                                        <li>Except where legislation cannot be excluded or would
+                                            make this clause illegal, or where the inclusion of this
+                                            clause would make AAS liable to a penalty, the Seller
+                                            releases and indemnifies AAS from any Claim that is
+                                            made against AAS in respect of any loss, damage, death
+                                            or injury arising from negligence or otherwise caused
+                                            directly or indirectly or arising out of the use or condition
+                                            of the Vehicle sold to AAS, including Consequential Loss,
+                                            except to the extent that such loss, damage, death or
+                                            injury has been caused by AAS. </li>
+                                        <li>Without limiting the foregoing, the Seller indemnifies and
+                                            agrees to keep indemnified, AAS from and against any loss,
+                                            cost damage or expense (including legal costs on a full
+                                            indemnity basis) incurred by AAS in connection with any
+                                            breach of warranty provided by the Seller under this agreement.</li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> PERSONAL PROPERTY AND SECURITY ACT
+                                    <ol class="alpha">
+                                        <li>The Seller acknowledges that:
+                                            <ol class="roman">
+                                                <li>this agreement constitutes a security
+                                                    agreement for the purposes of the Personal
+                                                    Property Securities Act 2009 (Cth) (PPSA);</li>
+                                                <li>AAS has a security interest in the Vehicle
+                                                    supplied under this agreement.; and
+                                                </li>
+                                                <li>
+                                                    from the date of this agreement AAS may
+                                                    register a security interest in the Vehicle on the
+                                                    Personal Property Securities Register.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>The Seller agrees to do anything that AAS reasonably
+                                            requires to ensure that AAS has at all times a
+                                            continuously and perfected security interest over the
+                                            Vehicle. </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> GST
+                                    <ol class="alpha">
+                                        <li>If GST is payable by a supplier (or by the representative
+                                            member for a GST group of which the supplier is a
+                                            member) on any supply made under or in relation to this
+                                            agreement, the recipient must pay to the supplier an
+                                            amount (GST Amount) equal to the GST payable on the
+                                            supply. The GST Amount is payable by the recipient in
+                                            addition to and at the same time as the net consideration
+                                            for the supply.</li>
+                                        <li>If a party is required to make any payment or
+                                            reimbursement, that payment or reimbursement must be
+                                            reduced by the amount of any input tax credits or reduced
+                                            input tax credits to which the other party (or the
+                                            representative member for a GST group of which it is a
+                                            member) is entitled for any acquisition relating to that
+                                            payment or reimbursement.
+                                        </li>
+                                        <li>This clause is subject to any other specific agreement
+                                            regarding the payment of GST on supplies.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> ASSIGNMENT
+                                    <ol class="alpha">
+                                        <li>
+                                            The Seller must not transfer any right or liability under
+                                            this agreement without the prior written consent of AAS.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> NOTICES
+                                    <ol class="alpha">
+                                        <li>Any notice to or by a party under this agreement must be
+                                            in writing and signed by the sender or, if a corporate party,
+                                            an authorised officer of the sender.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> GOVERNING LAW AND JURISDICTION
+                                    <ol class="alpha">
+                                        <li>
+                                            This agreement is governed by and construed under the
+                                            law in the State of Victoria.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> AMENDMENTS
+                                    <ol class="alpha">
+                                        <li>
+                                            Any amendment to this agreement has no force or effect,
+                                            unless effected by a document executed by the parties.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> ENTIRE AGREEMENT
+                                    <ol class="alpha">
+                                        <li>
+                                            This agreement constitutes the entire agreement
+                                            between the parties and supersedes any prior conduct,
+                                            arrangement, agreement or understanding in relation to
+                                            its subject matter.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> FURTHER ASSURANCE
+                                    <ol class="alpha">
+                                        <li>
+                                            The Seller must promptly do all things necessary in order
+                                            to give effect to this agreement, including executing and
+                                            delivering documents
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> COUNTERPARTS
+                                    <ol class="alpha">
+                                        <li>
+                                            This document may be executed in any number of
+                                            counterparts, all of which taken together are deemed to
+                                            constitute one and the same document.
+                                        </li>
+                                    </ol>
+                                </li>
+                            </div>
+                            <div class="li-group">
+                                <li> DEFINITIONS
+                                    <ol class="alpha">
+                                        <li>"Claim" means any claim, demand, action or proceeding;</li>
+                                        <li>"Consequential Loss" means any loss or damage
+                                            suffered by a party or any other person which is indirect
+                                            or consequential, including but not limited to loss of
+                                            revenue, loss of income, loss of business, loss of profits,
+                                            loss of goodwill or credit, loss of business reputation, loss
+                                            of data or data use, future reputation or publicity, loss of
+                                            use, loss of interest, damage to credit rating or loss or
+                                            denial of opportunity;
+                                        </li>
+                                        <li>"Payment Amount" means the Purchase Price less the
+                                            Service Fee;</li>
+                                        <li>"Payout Figure" means the amount owed to the financier
+                                            of the Vehicle to discharge any loan against the Vehicle,
+                                            including any and all associated fees; </li>
+                                        <li>"Seller" means the owner of the Vehicle identified in this
+                                            agreement;</li>
+                                        <li>"Service Fee" means the fee for the performance of the Services in the amount of $118 (plus GST) or such other
+                                            amount notified by AAS to the Seller in writing prior to
+                                            entering into this agreement; </li>
+                                        <li>"Services" means services performed by AAS including
+                                            background, history, ownership and security checks,
+                                            transfer and collection of the Vehicle;
+                                        </li>
+                                        <li>“Vehicle” means the vehicle identified in this agreement</li>
+                                    </ol>
+                                </li>
+                            </div>
+                        </div>
+                    </ol>
+                </div>
+
+                <div class="customerCopy">
+                    <div class="form-left">
+                        <div class="form-row lableBox">
+                            <label><b>REGO</b></label>
+                            <input type="text" name="rego"  id="rego" >
+                        </div>
+                        <p class="text-center"><b>PLEASE CIRCLE</b></p>
+                        <table class="checkTable">
+                            <tr>
+                                <td>Service Books</td>
+                                <td>Yes</td>
+                                <td>Partial</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Owners Manual</td>
+                                <td>Yes</td>
+                                <td></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Spare Key</td>
+                                <td>Yes</td>
+                                <td></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Sunroof</td>
+                                <td>Yes</td>
+                                <td></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Leather</td>
+                                <td>Yes</td>
+                                <td></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Sat Nav </td>
+                                <td>Yes</td>
+                                <td></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Wheels</td>
+                                <td>Alloys</td>
+                                <td></td>
+                                <td>Hub Caps</td>
+                            </tr>
+                            <tr>
+                                <td>Tradesman Extra’s</td>
+                                <td>Yes</td>
+                                <td></td>
+                                <td>No</td>
+                            </tr>
+                        </table>
+                        <div class="form-row lableBox">
+                            <label><b>Please specify</b></label>
+                            <input type="text" name="specify"  id="specify" >
+                        </div>
+                        <div class="form-row circleText">
+                            <b>Or Circle: </b>
+                            <span>Bull bar tow bar Winch Canopy Spotlight Snorkel hard lid soft top</span>
+                        </div>
+                        <table class="checkTable">
+                            <tr>
+                                <td class="td-Sm">Upgrades or modifications</td>
+                                <td>Yes</td>
+                                <td> </td>
+                                <td>No</td>
+                            </tr>
+                        </table>
+                        <div class="form-row">
+                            <label><b>Please specify</b></label>
+                            <input type="text" name="1"  id="1" >
+                        </div>
+                        <table class="checkTable">
+                            <tr>
+                                <td class="td-Sm">Sports Kit (E.g.: M Sport, S Line, AMG)</td>
+                                <td>Yes</td>
+                                <td> </td>
+                                <td>No</td>
+                            </tr>
+                        </table>
+                        <div class="form-row">
+                            <label><b>Please specify</b></label>
+                            <input type="text" name="specify1"  id="specify1" >
+                        </div>
+                        <p><b>Damage & Faults – E.G: Body work, tyres, all mechanical, windscreen, dings, scratches</b></p>
+                        <div class="form-row lableBox">
+                            <label><b>etc.</b></label>
+                            <input type="text" name="etc"  id="etc" >
+                        </div>
+                        <p><b>Total Approximate Spend required: </b></p>
+                    </div>
+                    <div class="box">
+                            <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple accept="image/x-png,image/gif,image/jpeg,application/pdf" />
+                            <label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
+                            <button id="upload" class="sendBtn">Send</button>
+                        </div>
+                </div>
+            </form>
+		</div>
+	</div>
+<script src="js/custom-file-input.js"></script>
+</body>
+</html>
